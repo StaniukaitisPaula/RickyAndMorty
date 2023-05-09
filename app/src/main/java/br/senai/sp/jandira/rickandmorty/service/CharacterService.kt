@@ -18,4 +18,7 @@ interface CharacterService {
 
     @GET("character/")
     fun getCharactersByPage(@Query("page") page: Int): Call<CharacterList>
+
+    @GET("location/")
+    fun  getLocation(@Path("name")location: Int): Call<CharacterList>
 }
